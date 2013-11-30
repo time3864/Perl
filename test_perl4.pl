@@ -4,10 +4,10 @@
 use strict;
 use feature "state";
  
-goto SKIP06;
+goto SKIP01;
  
-SKIP06:
-print "\nTest06\n";
+SKIP01:
+print "\nTest01\n";
 
 
 
