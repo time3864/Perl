@@ -94,6 +94,7 @@ my %couple = (
 'Phing' => 'Kang',
 'Thin' => 'CK',
 'Jia Wei' => 'Yee Hui',
+'Nobody',
 );
 print %couple;
 print "\n";
@@ -102,10 +103,20 @@ print "@cincai\n";
 print "@cincai[0]\n";
 print "@cincai[1]\n";
 
+print $couple{"Nobody"},"\n";
 
+if(exists $couple{"Nobody"}){
+print "OMG! GHOST!!!\n";
+}
 
+if(exists $couple{"Somebody"}){
+print "OMG! GHOST!!!\n";
+}else{
+print "No ghost.\n";
+}
 
-
+delete $couple{"Nobody"};
+print %couple;
 
 
 
