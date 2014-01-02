@@ -5,7 +5,7 @@
 use strict;
 use feature "state";
 
-goto SKIP03;
+goto SKIP0A;
 
 SKIP01:
 print "\nTest01\n";
@@ -119,7 +119,8 @@ delete $couple{"Nobody"};
 print %couple;
 
 
-
+SKIP0A:
+print "\n\nPATH is $ENV{PATH}\n";
 
 
 
